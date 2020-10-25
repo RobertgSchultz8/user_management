@@ -1,0 +1,2 @@
+#These need to be executed first to set up groups.
+sudo groupadd --gid 2000 adminsudo groupadd --gid 3000 developersudo groupadd --gid 4000 staffsudo groupadd --gid 5000 temp#This last one sets a quota of 50000mb for temps. File size may not exceed 1000mb.setquota -g 50000 50000 1000 1000 -a /dev/loop0
