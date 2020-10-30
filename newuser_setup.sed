@@ -1,5 +1,5 @@
 #Before running the following commands must be used
-#sudo groupadd --gid 2000 admin
+#sudo groupadd --gid 2000 %admin
 #sudo groupadd --gid 3000 developer
 #sudo groupadd --gid 4000 staff
 #sudo groupadd --gid 5000 temp
