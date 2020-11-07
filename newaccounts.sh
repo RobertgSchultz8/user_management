@@ -1,5 +1,5 @@
 #There is definitely a better way to do this, but this is the one I pieced together
-#These first two lines remove spaces and shorten all names to 18 characters in length.
+#These first two lines remove spaces and shorten all names to 18 characters in length
 #Also forgot how to make permanent changes with sed, found a work around for that
 sed -e 's/[[:space:]]//g' UserNamesLvl1.txt > newusers1a.txt
 cut -c -18 newusers1a.txt > newusers1b.txt
@@ -29,6 +29,7 @@ rm newusers2d.txt
 sed -e '4~4 s,$,:password:5000:5000:Temp:/etc/temp_skeleton:/bin/bash,' newusers2e.txt > newusers2f.txt
 rm newusers2e.txt
 #Now these next few lines create the new users, give them passwords, assign them to groups, and give them their skeleton directory
+#I assume that all groups and directories have been created
 newusers newusers1f.txt
 rm newusers1f.txt
 newusers newusers2f.txt
