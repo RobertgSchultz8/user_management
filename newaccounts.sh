@@ -1,3 +1,4 @@
+#This is essentially all of my previous work on this assignment condensed into a single script
 #There is definitely a better way to do this, but this is the one I pieced together
 #These first two lines remove spaces and shorten all names to 18 characters in length
 #Also forgot how to make permanent changes with sed, found a work around for that
